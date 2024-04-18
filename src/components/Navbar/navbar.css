@@ -7,6 +7,8 @@ nav {
     align-items: center;
     padding: 22px 135px;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
 }
 
 nav img {
