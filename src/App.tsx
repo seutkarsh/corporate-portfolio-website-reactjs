@@ -1,8 +1,8 @@
 import React from 'react'
 import './App.css'
-import HomePage from './pages/HomePage'
+import HomePage from './pages/HomePage/HomePage'
 
-function App() {
+const App = (): React.ReactElement => {
     return (
         <div className="App">
             <HomePage />

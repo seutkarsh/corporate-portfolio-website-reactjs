@@ -1,0 +1,27 @@
+button {
+    display: flex;
+    border-radius: 6px;
+    border: 1px solid var(--white);
+    background-color: transparent;
+    color: var(--white);
+    align-items: center;
+    justify-content: center;
+}
+
+.rect-button--filled{
+    color:var(--primary-green)
+}
+
+.large {
+}
+
+.medium {
+    width: 124px;
+    height: 44px;
+    padding: 16px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+

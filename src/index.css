@@ -1,105 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
 
-*{
-  margin: 0;
-  padding:0;
-  box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-  scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-body{
-  font-family: "Lexend Deca", sans-serif;
+body,
+a,
+button {
+    font-family: 'Lexend Deca', sans-serif;
 }
 
-
-:root{
-  /* ---------- COLORS-------------- */
-  --primary-green: #83BF6E;
-  --primary-soft-green: #B5E4CA;
-  --white:#FFFFFF;
-  --grey-light: #C8CFD5;
-  --grey-light-2: #F2F3F6;
-  --dark: #12141D;
-  --grey-dark: #6F7174;
-  --background-dark: #1F1F1F;
-  --background-dark-2: #201F1F;
-  --background-linear-gradient-dark: linear-gradient(90deg, #0A0A0A 0%, #0B0B0B 35.35%, #080808 58.13%, #090909 100%);
-  --secondary-purple: #C5B1FF;
-  --secondary-red:#FFA7A7 ;
-  --secondary-sky:#86E2F9;
+:root {
+    /* ---------- COLORS-------------- */
+    --primary-green: #55e6a5;
+    --primary-soft-green: #b5e4ca;
+    --white: #ffffff;
+    --grey-light: #c8cfd5;
+    --grey-light-2: #f2f3f6;
+    --dark: #12141d;
+    --grey-dark: #6f7174;
+    --background-dark: #1f1f1f;
+    --background-dark-2: #201f1f;
+    --background-linear-gradient-dark: linear-gradient(
+        90deg,
+        #0a0a0a 0%,
+        #0b0b0b 35.35%,
+        #080808 58.13%,
+        #090909 100%
+    );
+    --secondary-purple: #c5b1ff;
+    --secondary-red: #ffa7a7;
+    --secondary-sky: #86e2f9;
+    --text-black: #18191c;
 }
 
-h1{
-  font-weight: bold;
-  font-size: 80px;
-  line-height: 1.075;
+h1 {
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 1.075;
 }
 
-h2{
-  font-weight: bold;
-  font-size: 72px;
-  line-height: 1.05;
+h2 {
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 1.05;
 }
 
-h3{
-  font-weight: bold;
-  font-size: 60px;
-  line-height: 1.06;
+h3 {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 1.06;
 }
 
-h4{
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 1.08;
+h4 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 1.08;
 }
 
-h5{
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
+h5 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
 }
 
-h6{
-  font-size: 30px;
-  line-height: 1.2;
+h6 {
+    font-size: 30px;
+    line-height: 1.2;
 }
 
-p{
-  font-size: 16px;
-  line-height: 1.5;
+p {
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-.big-title{
-  font-size: 24px;
-  line-height: 1.25;
+.big-title {
+    font-size: 24px;
+    line-height: 1.25;
 }
 
-.title{
-  font-size: 20px;
-  line-height: 1.3;
+.title {
+    font-size: 20px;
+    line-height: 1.3;
 }
 
-.subtitle{
-  font-size: 16px;
-  line-height: 1.625;
+.subtitle {
+    font-size: 16px;
+    line-height: 1.625;
 }
 
-.caption{
-  font-size: 18px;
-  line-height: 1.55;
+.caption {
+    font-size: 18px;
+    line-height: 1.55;
 }
 
-.small-text{
-  font-size: 14px;
-  line-height: 1.57;
- }
-
-h1,h2,h3,h4,h5,h6,.big-title,.title{
-  font-weight: bold;
+.small-text {
+    font-size: 14px;
+    line-height: 1.57;
 }
-p,.subtitle,.caption,.small-text{
-  font-weight: normal;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.big-title,
+.title {
+    font-weight: bold;
+}
+p,
+.subtitle,
+.caption,
+.small-text {
+    font-weight: normal;
 }
