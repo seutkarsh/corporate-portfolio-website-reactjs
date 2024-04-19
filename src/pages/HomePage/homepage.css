@@ -117,73 +117,71 @@ main {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    gap:300px
+    gap: 300px;
 }
 
-.why-choose-us--heading{
+.why-choose-us--heading {
     display: flex;
-    gap:8px;
+    gap: 8px;
     flex-direction: column;
 }
 .why-choose-us--heading span:first-child {
     color: var(--primary-green);
 }
 
-.why-choose-us--heading-container p{
+.why-choose-us--heading-container p {
     color: var(--grey-dark);
     width: 70%;
 }
 
-.why-choose-us--img-section{
+.why-choose-us--img-section {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 24px;
 }
 
-.stat-img{
+.stat-img {
     background: url(../../assets/images/wcu-stat-bg.png) no-repeat;
-display: flex;
-    gap:100px;
+    display: flex;
+    gap: 100px;
     flex-direction: column;
     justify-content: space-around;
     align-items: start;
     padding: 30px;
 }
 
-
-
-.stat div:first-child span{
+.stat div:first-child span {
     font-size: 96px;
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
     text-transform: uppercase;
 }
-.stat div:first-child span:first-child{
-    color:var(--white)
+.stat div:first-child span:first-child {
+    color: var(--white);
 }
-.stat div:first-child span:last-child{
-    color:var(--primary-green)
-}
-
-.stat span:last-child{
-    color: var(--grey-light)
+.stat div:first-child span:last-child {
+    color: var(--primary-green);
 }
 
-.list{
+.stat span:last-child {
+    color: var(--grey-light);
+}
+
+.list {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    gap:4px
+    gap: 4px;
 }
 
-.list img{
+.list img {
     width: 68px;
 }
 
-.list span{
+.list span {
     font-size: 64px;
     font-style: normal;
     font-weight: 500;
@@ -193,7 +191,7 @@ display: flex;
     margin-left: 5px;
 }
 
-.main-img{
+.main-img {
     position: relative;
     background: url(../../assets/images/wcu-main.png) no-repeat;
     background-size: cover;
@@ -201,10 +199,10 @@ display: flex;
     border-radius: 14px;
 }
 
-.main-img::before{
+.main-img::before {
     background-color: var(--background-dark-2);
     opacity: 0.5;
-    content: "";
+    content: '';
     display: block;
     position: relative;
     top: 0;
@@ -214,7 +212,7 @@ display: flex;
     border-radius: 14px;
 }
 
-.main-img h5{
+.main-img h5 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -227,10 +225,99 @@ display: flex;
     font-style: normal;
 }
 
-.main-img img{
+.main-img img {
     position: absolute;
     bottom: -10%;
     right: -10%;
-    transform: translate(-15%,0);
+    transform: translate(-15%, 0);
     z-index: 1;
+}
+
+/*---------------- SERVICES SECTION -----------------*/
+.services-section {
+    position: relative;
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 40px;
+    width: 100%;
+    background: url(../../assets/images/services-bg.png) no-repeat;
+    background-size: cover;
+    padding: 100px 300px;
+}
+
+.services-section img {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+.services--heading span {
+    color: var(--primary-green);
+}
+.services--heading h4 {
+    width: 50%;
+    color: var(--white);
+}
+
+.services--card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.services--card span:first-child {
+    font-size: 110px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 132px */
+    letter-spacing: -4px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.services--card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 18rem;
+    gap: 6px;
+}
+
+.services--card-info span:first-child {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    color: var(--white);
+    letter-spacing: normal;
+}
+
+.services--card-info p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    color: var(--grey-light);
+    margin-bottom: 6px;
+}
+
+.services--main-section {
+    height: 25rem;
+}
+
+.services--main-section .services--card:nth-child(1) {
+    position: absolute;
+    bottom: 15%;
+    left: 20%;
+}
+.services--main-section .services--card:nth-child(2) {
+    position: absolute;
+    top: 52%;
+    left: 45%;
+}
+.services--main-section .services--card:nth-child(3) {
+    position: absolute;
+    top: 27%;
+    right:15%;
 }

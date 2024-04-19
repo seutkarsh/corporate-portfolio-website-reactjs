@@ -3,6 +3,7 @@ import './homepage.css'
 import Navbar from '../../components/Navbar/Navbar'
 import Hero from './Hero'
 import WhyChooseUs from './WhyChooseUs'
+import Services from './Services'
 
 const HomePage = (): React.ReactElement => {
     return (
@@ -11,6 +12,7 @@ const HomePage = (): React.ReactElement => {
             <main>
                 <Hero />
                 <WhyChooseUs />
+                <Services />
             </main>
         </>
     )
