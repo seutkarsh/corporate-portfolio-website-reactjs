@@ -8,6 +8,7 @@ import Portfolio from './Portfolio'
 import Team from './Team'
 import ClientFeedback from './ClientFeedback'
 import Pricing from './Pricing'
+import Blogs from './Blogs'
 
 const HomePage = (): React.ReactElement => {
     return (
@@ -21,6 +22,7 @@ const HomePage = (): React.ReactElement => {
                 <Team />
                 <ClientFeedback />
                 <Pricing />
+                <Blogs />
             </main>
         </>
     )

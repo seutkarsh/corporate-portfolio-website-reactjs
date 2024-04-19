@@ -786,3 +786,98 @@ main {
     background: var(--primary-green);
     border: none;
 }
+
+/*---------------- BLOGS SECTION -----------------*/
+.blogs-section {
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 40px;
+    width: 100%;
+    background: var(--background-linear-gradient-dark);
+    padding: 100px 300px;
+}
+
+.blogs--main-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8rem;
+}
+
+.blogs--card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    border: 0.5px solid var(--grey-light-2);
+}
+
+.blogs--info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.blogs--info span{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+color: var(--grey-light-2);
+}
+.blogs--info img {
+    width: 1rem;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(31%) saturate(4023%)
+        hue-rotate(73deg) brightness(97%) contrast(87%);
+    margin-right: 5px;
+}
+
+.blogs--info span:nth-child(2){
+    color: var(--primary-green);
+}
+
+.blogs--card h6{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    color: var(--white);
+    margin-top: 1rem;
+}
+
+.blogs--bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 38px;
+}
+
+.blogs--link{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    color: var(--primary-green);
+}
+
+.blogs--date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    color:var(--text-black);
+    background: var(--white);
+    padding: 15px 10px;
+    border-radius: 6px;
+}
+
+.blogs--info,.blogs--card h6,.blogs--bottom, .blogs--card .pricing--card-features-line{
+    padding:0 20px;
+}
+
+/*---------------- CONTACT SECTION -----------------*/
