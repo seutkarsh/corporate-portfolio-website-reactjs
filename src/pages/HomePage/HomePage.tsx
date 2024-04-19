@@ -5,6 +5,7 @@ import Hero from './Hero'
 import WhyChooseUs from './WhyChooseUs'
 import Services from './Services'
 import Portfolio from './Portfolio'
+import Team from './Team'
 
 const HomePage = (): React.ReactElement => {
     return (
@@ -15,6 +16,7 @@ const HomePage = (): React.ReactElement => {
                 <WhyChooseUs />
                 <Services />
                 <Portfolio />
+                <Team />
             </main>
         </>
     )
