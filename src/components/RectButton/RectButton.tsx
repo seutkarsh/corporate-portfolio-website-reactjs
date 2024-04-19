@@ -6,16 +6,18 @@ interface IProps {
     text: string
     onClick?: () => void
     size: string
+    customClasses?: string
 }
 const RectButton = ({
     filled,
     text,
     onClick,
     size,
+    customClasses,
 }: IProps): React.ReactElement => {
     return (
         <button
-            className={`rect-button ${filled ? 'rect-button--filled' : ''} ${size}`}
+            className={`rect-button ${filled ? 'rect-button--filled' : ''} ${size} ${customClasses}`}
             onClick={onClick}
         >
             {text}
