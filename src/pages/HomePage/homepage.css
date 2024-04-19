@@ -1,13 +1,18 @@
+/*------------ HOMEPAGE --------------*/
 main {
     margin-top: 90px;
 }
+
+/*------------ HERO SECTION --------------*/
 .hero-section {
+    position: relative;
     width: 100%;
     background: var(--background-linear-gradient-dark);
     padding: 100px 300px;
 }
 
 .hero--heading {
+    position: relative;
     display: flex;
     flex-direction: column;
     font-size: 96px;
@@ -35,13 +40,12 @@ main {
     text-align: right;
 }
 
-.hero--heading-top{
+.hero--heading-top {
     display: flex;
     justify-content: space-between;
-
 }
-.hero--heading-top p{
-height: inherit;
+.hero--heading-top p {
+    height: inherit;
     word-wrap: normal;
     width: 30%;
     letter-spacing: 0;
@@ -68,7 +72,6 @@ height: inherit;
 .hero--para-container {
     width: 100%;
     display: flex;
-
 }
 
 .hero--para {
@@ -87,13 +90,147 @@ height: inherit;
 .hero--left-box {
     position: absolute;
     top: 250px;
-    left: 150px;
-    z-index: 1;
+    left: 40px;
+    z-index: 10;
 }
 
 .hero--right-box {
     position: absolute;
     bottom: 200px;
     right: 80px;
+    z-index: 1;
+}
+
+/*------------------  WHY CHOOSE US SECTION --------------*/
+.why-choose-us-section {
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 40px;
+    width: 100%;
+    background: var(--white);
+    padding: 100px 300px;
+}
+
+.why-choose-us--heading-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap:300px
+}
+
+.why-choose-us--heading{
+    display: flex;
+    gap:8px;
+    flex-direction: column;
+}
+.why-choose-us--heading span:first-child {
+    color: var(--primary-green);
+}
+
+.why-choose-us--heading-container p{
+    color: var(--grey-dark);
+    width: 70%;
+}
+
+.why-choose-us--img-section{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 24px;
+}
+
+.stat-img{
+    background: url(../../assets/images/wcu-stat-bg.png) no-repeat;
+display: flex;
+    gap:100px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    padding: 30px;
+}
+
+
+
+.stat div:first-child span{
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+.stat div:first-child span:first-child{
+    color:var(--white)
+}
+.stat div:first-child span:last-child{
+    color:var(--primary-green)
+}
+
+.stat span:last-child{
+    color: var(--grey-light)
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap:4px
+}
+
+.list img{
+    width: 68px;
+}
+
+.list span{
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 76.8px */
+    text-transform: uppercase;
+    color: var(--white);
+    margin-left: 5px;
+}
+
+.main-img{
+    position: relative;
+    background: url(../../assets/images/wcu-main.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    border-radius: 14px;
+}
+
+.main-img::before{
+    background-color: var(--background-dark-2);
+    opacity: 0.5;
+    content: "";
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+}
+
+.main-img h5{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    z-index: 1;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.main-img img{
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+    transform: translate(-15%,0);
     z-index: 1;
 }
