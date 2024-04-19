@@ -319,5 +319,118 @@ main {
 .services--main-section .services--card:nth-child(3) {
     position: absolute;
     top: 27%;
-    right:15%;
+    right: 15%;
 }
+
+/*------------------- PORTFOLIO -------------------*/
+
+.portfolio-section {
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 40px;
+    width: 100%;
+    background: var(--background-dark-2);
+    padding: 100px 300px;
+}
+
+.portfolio--heading-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 300px;
+}
+
+.portfolio--heading {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+.portfolio--heading span:first-child {
+    color: var(--primary-green);
+}
+
+.portfolio--heading-container p {
+    color: var(--grey-light);
+    width: 70%;
+}
+
+.portfolio--heading h4 {
+    color: var(--white);
+}
+
+.portfolio--button-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 24px;
+}
+
+.portfolio--button-section img {
+    width: 30px;
+    margin: 10px;
+    color: var(--grey-light);
+}
+
+.portfolio--button-section a {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--grey-light);
+    border-radius: 50%;
+}
+
+.portfolio--button-section a:first-child img {
+    transform: rotate(180deg);
+    filter: brightness(0) saturate(100%) invert(94%) sepia(7%) saturate(230%)
+        hue-rotate(168deg) brightness(89%) contrast(88%);
+}
+
+.portfolio--button-section a:last-child {
+    background: var(--primary-green);
+    border: none;
+}
+
+.portfolio--project-section{
+    display: flex;
+    flex-direction: row;
+    gap:5rem;
+}
+
+.portfolio--project-section img{
+    width: 100%;
+    height: 100%;
+    border-radius: 14px 14px 0 0;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+}
+.project-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--white);
+    border-radius:0 0 14px 14px ;
+    padding:30px 25px 25px 25px;
+}
+
+.project-info h6{
+color: var(--text-black);
+}
+
+.project-info span{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    color: var(--grey-dark);
+}
+
+
+/*-------------------- TEAM SECTION --------------------*/

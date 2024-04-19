@@ -9,10 +9,20 @@ button {
 }
 
 .rect-button--filled{
-    color:var(--primary-green)
+    color:var(--text-black);
+    background: var(--primary-green);
+    border: none;
 }
 
 .large {
+    width: 180px;
+    height: 60px;
+    padding: 16px 20px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+
 }
 
 .medium {
