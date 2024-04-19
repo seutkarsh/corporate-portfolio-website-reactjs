@@ -6,6 +6,7 @@ import WhyChooseUs from './WhyChooseUs'
 import Services from './Services'
 import Portfolio from './Portfolio'
 import Team from './Team'
+import ClientFeedback from './ClientFeedback'
 
 const HomePage = (): React.ReactElement => {
     return (
@@ -17,6 +18,7 @@ const HomePage = (): React.ReactElement => {
                 <Services />
                 <Portfolio />
                 <Team />
+                <ClientFeedback />
             </main>
         </>
     )

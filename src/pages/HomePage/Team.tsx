@@ -3,7 +3,6 @@ import Team1 from '../../assets/images/team-1.png'
 import Team2 from '../../assets/images/team-2.png'
 import Team3 from '../../assets/images/team-3.png'
 import PlusIcon from '../../assets/vectors/plus.svg'
-import ShareIcon from '../../assets/vectors/share.svg'
 
 interface ITeam {
     name: string
