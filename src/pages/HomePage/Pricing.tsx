@@ -32,12 +32,12 @@ const Pricing = (): React.ReactElement => {
                         <h4>$36.00</h4>
                     </div>
                     <div className="pricing--card-features">
-                        {features.map((feature) => {
+                        {features.map((feature, index) => {
                             return (
-                                <>
+                                <div key={index}>
                                     <span>{feature}</span>
                                     <div className="pricing--card-features-line"></div>
-                                </>
+                                </div>
                             )
                         })}
                     </div>
@@ -55,12 +55,12 @@ const Pricing = (): React.ReactElement => {
                         <h4>$54.00</h4>
                     </div>
                     <div className="pricing--card-features">
-                        {features.map((feature) => {
+                        {features.map((feature, index) => {
                             return (
-                                <>
+                                <div key={index}>
                                     <span>{feature}</span>
                                     <div className="pricing--card-features-line"></div>
-                                </>
+                                </div>
                             )
                         })}
                     </div>
@@ -78,12 +78,12 @@ const Pricing = (): React.ReactElement => {
                         <h4>$89.00</h4>
                     </div>
                     <div className="pricing--card-features">
-                        {features.map((feature) => {
+                        {features.map((feature, index) => {
                             return (
-                                <>
+                                <div key={index}>
                                     <span>{feature}</span>
                                     <div className="pricing--card-features-line"></div>
-                                </>
+                                </div>
                             )
                         })}
                     </div>
