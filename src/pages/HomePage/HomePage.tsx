@@ -10,6 +10,7 @@ import ClientFeedback from './ClientFeedback'
 import Pricing from './Pricing'
 import Blogs from './Blogs'
 import Contact from './Contact'
+import Footer from '../../components/Footer/Footer'
 
 const HomePage = (): React.ReactElement => {
     return (
@@ -26,6 +27,7 @@ const HomePage = (): React.ReactElement => {
                 <Blogs />
                 <Contact />
             </main>
+            <Footer />
         </>
     )
 }
