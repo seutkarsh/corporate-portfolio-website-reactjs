@@ -1003,3 +1003,19 @@ input[type='textarea'] {
     margin-top: 50px;
     align-self: end;
 }
+
+.form-error{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    color: var(--secondary-red);
+}
+
+.form-message{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    color: var(--primary-green);
+}
