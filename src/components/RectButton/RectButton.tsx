@@ -7,6 +7,7 @@ interface IProps {
     onClick?: () => void
     size: string
     customClasses?: string
+    type?: 'submit' | 'reset' | 'button' | undefined
 }
 const RectButton = ({
     filled,
@@ -14,9 +15,11 @@ const RectButton = ({
     onClick,
     size,
     customClasses,
+    type,
 }: IProps): React.ReactElement => {
     return (
         <button
+            type={type ? type : undefined}
             className={`rect-button ${filled ? 'rect-button--filled' : ''} ${size} ${customClasses}`}
             onClick={onClick}
         >

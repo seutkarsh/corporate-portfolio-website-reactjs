@@ -818,12 +818,12 @@ main {
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
-.blogs--info span{
+.blogs--info span {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
-color: var(--grey-light-2);
+    color: var(--grey-light-2);
 }
 .blogs--info img {
     width: 1rem;
@@ -832,11 +832,11 @@ color: var(--grey-light-2);
     margin-right: 5px;
 }
 
-.blogs--info span:nth-child(2){
+.blogs--info span:nth-child(2) {
     color: var(--primary-green);
 }
 
-.blogs--card h6{
+.blogs--card h6 {
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -845,7 +845,7 @@ color: var(--grey-light-2);
     margin-top: 1rem;
 }
 
-.blogs--bottom{
+.blogs--bottom {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -853,7 +853,7 @@ color: var(--grey-light-2);
     margin-bottom: 38px;
 }
 
-.blogs--link{
+.blogs--link {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -861,7 +861,7 @@ color: var(--grey-light-2);
     color: var(--primary-green);
 }
 
-.blogs--date{
+.blogs--date {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -870,14 +870,136 @@ color: var(--grey-light-2);
     font-style: normal;
     font-weight: 600;
     line-height: 130%;
-    color:var(--text-black);
+    color: var(--text-black);
     background: var(--white);
     padding: 15px 10px;
     border-radius: 6px;
 }
 
-.blogs--info,.blogs--card h6,.blogs--bottom, .blogs--card .pricing--card-features-line{
-    padding:0 20px;
+.blogs--info,
+.blogs--card h6,
+.blogs--bottom,
+.blogs--card .pricing--card-features-line {
+    padding: 0 20px;
 }
 
 /*---------------- CONTACT SECTION -----------------*/
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 150px;
+    width: 100%;
+    background: var(--white);
+    padding: 100px 300px;
+}
+
+.contact--heading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact--heading-container span {
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    color: var(--text-black);
+}
+.contact--heading-container div:first-child span:first-child {
+    background: var(--primary-green);
+}
+
+.contact--heading-container div:last-child span:nth-child(2) {
+    color: var(--primary-green);
+}
+
+.contact--prompt {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.contact--prompt h6 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    color: var(--grey-dark);
+    margin-top: 1rem;
+}
+
+.contact--company-email-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    color: var(--text-black);
+    margin-top: 1rem;
+}
+.contact--email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.contact--company-email-info img {
+    width: 20px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(31%) saturate(4023%)
+        hue-rotate(73deg) brightness(97%) contrast(87%);
+}
+
+.contact--form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 25px;
+}
+
+input,
+textarea {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    color: var(--grey-dark);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+input:focus,textarea:focus{
+    color: var(--text-black);
+}
+
+input[type='text'],
+input[type='email'],
+input[type='textarea'] {
+
+}
+
+.input-wrapper {
+    position: relative;
+    border-bottom: 1px solid var(--grey-dark);
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.input-wrapper i {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.contact--submit{
+    margin-top: 50px;
+    align-self: end;
+}
